@@ -130,6 +130,7 @@ public class YSpinner extends TextView {
 		return super.onTouchEvent(event);
 	}
 
+	// 可设置anchor的view
 	public void showPopupList(View view) {
 		if (!hideArrow) {
 			arrowAnimation(true);
