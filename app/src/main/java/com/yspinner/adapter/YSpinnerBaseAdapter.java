@@ -41,6 +41,16 @@ public abstract class YSpinnerBaseAdapter<T, D extends ViewDataBinding> extends 
 		}
 	}
 
+	/*
+	 * 用于外部取item数据
+	 */
+	public T getItemData(int position) {
+		return data.get(position);
+	}
+
+	/*
+	 * 用于渲染item，不作为外部取item数据
+	 */
 	@Override
 	public T getItem(int position) {
 		if (position >= mSelectedIndex) {
